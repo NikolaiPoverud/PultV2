@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" id="office-map">
+  <defs>
+    <style>
+      .wall { fill: none; stroke: #ccc; stroke-width: 2; }
+      .zone-label { font-size: 14px; fill: #999; font-family: system-ui, sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+      .desk-rect { fill: #e8f5e9; stroke: #66bb6a; stroke-width: 1.5; rx: 4; cursor: pointer; transition: fill 0.2s; }
+      .desk-label { font-size: 10px; fill: #555; font-family: system-ui, sans-serif; pointer-events: none; text-anchor: middle; dominant-baseline: central; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#fafafa" />
+
+  <!-- Walls -->
+  <rect class="wall" x="20" y="20" width="960" height="560" rx="8" />
+  <line class="wall" x1="340" y1="20" x2="340" y2="580" />
+  <line class="wall" x1="660" y1="20" x2="660" y2="580" />
+
+  <!-- Zone labels -->
+  <text class="zone-label" x="180" y="55">Zone A — Focus</text>
+  <text class="zone-label" x="460" y="55">Zone B — Collaboration</text>
+  <text class="zone-label" x="790" y="55">Zone C — Quiet</text>
+
+  <!-- Zone A: 8 desks (2 columns × 4 rows) -->
+  <g id="D-A01" class="desk" data-zone="A">
+    <rect class="desk-rect" x="60" y="80" width="100" height="60" />
+    <text class="desk-label" x="110" y="110">A01</text>
+  </g>
+  <g id="D-A02" class="desk" data-zone="A">
+    <rect class="desk-rect" x="200" y="80" width="100" height="60" />
+    <text class="desk-label" x="250" y="110">A02</text>
+  </g>
+  <g id="D-A03" class="desk" data-zone="A">
+    <rect class="desk-rect" x="60" y="170" width="100" height="60" />
+    <text class="desk-label" x="110" y="200">A03</text>
+  </g>
+  <g id="D-A04" class="desk" data-zone="A">
+    <rect class="desk-rect" x="200" y="170" width="100" height="60" />
+    <text class="desk-label" x="250" y="200">A04</text>
+  </g>
+  <g id="D-A05" class="desk" data-zone="A">
+    <rect class="desk-rect" x="60" y="260" width="100" height="60" />
+    <text class="desk-label" x="110" y="290">A05</text>
+  </g>
+  <g id="D-A06" class="desk" data-zone="A">
+    <rect class="desk-rect" x="200" y="260" width="100" height="60" />
+    <text class="desk-label" x="250" y="290">A06</text>
+  </g>
+  <g id="D-A07" class="desk" data-zone="A">
+    <rect class="desk-rect" x="60" y="350" width="100" height="60" />
+    <text class="desk-label" x="110" y="380">A07</text>
+  </g>
+  <g id="D-A08" class="desk" data-zone="A">
+    <rect class="desk-rect" x="200" y="350" width="100" height="60" />
+    <text class="desk-label" x="250" y="380">A08</text>
+  </g>
+
+  <!-- Zone B: 8 desks (2 columns × 4 rows) -->
+  <g id="D-B01" class="desk" data-zone="B">
+    <rect class="desk-rect" x="380" y="80" width="100" height="60" />
+    <text class="desk-label" x="430" y="110">B01</text>
+  </g>
+  <g id="D-B02" class="desk" data-zone="B">
+    <rect class="desk-rect" x="520" y="80" width="100" height="60" />
+    <text class="desk-label" x="570" y="110">B02</text>
+  </g>
+  <g id="D-B03" class="desk" data-zone="B">
+    <rect class="desk-rect" x="380" y="170" width="100" height="60" />
+    <text class="desk-label" x="430" y="200">B03</text>
+  </g>
+  <g id="D-B04" class="desk" data-zone="B">
+    <rect class="desk-rect" x="520" y="170" width="100" height="60" />
+    <text class="desk-label" x="570" y="200">B04</text>
+  </g>
+  <g id="D-B05" class="desk" data-zone="B">
+    <rect class="desk-rect" x="380" y="260" width="100" height="60" />
+    <text class="desk-label" x="430" y="290">B05</text>
+  </g>
+  <g id="D-B06" class="desk" data-zone="B">
+    <rect class="desk-rect" x="520" y="260" width="100" height="60" />
+    <text class="desk-label" x="570" y="290">B06</text>
+  </g>
+  <g id="D-B07" class="desk" data-zone="B">
+    <rect class="desk-rect" x="380" y="350" width="100" height="60" />
+    <text class="desk-label" x="430" y="380">B07</text>
+  </g>
+  <g id="D-B08" class="desk" data-zone="B">
+    <rect class="desk-rect" x="520" y="350" width="100" height="60" />
+    <text class="desk-label" x="570" y="380">B08</text>
+  </g>
+
+  <!-- Zone C: 6 desks (2 columns × 3 rows) -->
+  <g id="D-C01" class="desk" data-zone="C">
+    <rect class="desk-rect" x="700" y="80" width="100" height="60" />
+    <text class="desk-label" x="750" y="110">C01</text>
+  </g>
+  <g id="D-C02" class="desk" data-zone="C">
+    <rect class="desk-rect" x="840" y="80" width="100" height="60" />
+    <text class="desk-label" x="890" y="110">C02</text>
+  </g>
+  <g id="D-C03" class="desk" data-zone="C">
+    <rect class="desk-rect" x="700" y="170" width="100" height="60" />
+    <text class="desk-label" x="750" y="200">C03</text>
+  </g>
+  <g id="D-C04" class="desk" data-zone="C">
+    <rect class="desk-rect" x="840" y="170" width="100" height="60" />
+    <text class="desk-label" x="890" y="200">C04</text>
+  </g>
+  <g id="D-C05" class="desk" data-zone="C">
+    <rect class="desk-rect" x="700" y="260" width="100" height="60" />
+    <text class="desk-label" x="750" y="290">C05</text>
+  </g>
+  <g id="D-C06" class="desk" data-zone="C">
+    <rect class="desk-rect" x="840" y="260" width="100" height="60" />
+    <text class="desk-label" x="890" y="290">C06</text>
+  </g>
+
+  <!-- Meeting room indicators -->
+  <rect x="60" y="460" width="240" height="100" rx="8" fill="none" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6,3" />
+  <text x="180" y="515" text-anchor="middle" font-size="12" fill="#bbb" font-family="system-ui, sans-serif">Meeting Room 1</text>
+
+  <rect x="700" y="380" width="240" height="100" rx="8" fill="none" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6,3" />
+  <text x="820" y="435" text-anchor="middle" font-size="12" fill="#bbb" font-family="system-ui, sans-serif">Meeting Room 2</text>
+
+  <!-- Kitchen area -->
+  <rect x="400" y="460" width="220" height="100" rx="8" fill="none" stroke="#ddd" stroke-width="1.5" stroke-dasharray="6,3" />
+  <text x="510" y="515" text-anchor="middle" font-size="12" fill="#bbb" font-family="system-ui, sans-serif">Kitchen</text>
+</svg>
